@@ -17,7 +17,7 @@ export const UserProvider = ({ children }) => {
       //Make a call to the backend
       let res = await axios({
         method: "POST",
-        url: "http://localhost:3000/api/auth",
+        url: "https://backendencyptionlecture.onrender.com/api/auth",
         data: formData,
       });
 
@@ -32,7 +32,7 @@ export const UserProvider = ({ children }) => {
     try {
       let res = await axios({
         method: "POST",
-        url: "http://localhost:3000/api/users",
+        url: "https://backendencyptionlecture.onrender.com/api/users",
         data: formData,
       });
 
